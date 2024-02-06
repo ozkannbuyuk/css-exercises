@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.accordion {
+  width: 600px;
+  margin: 25px auto;
+}
+
+.accordion button {
+  width: 100%;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  background: green;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.accordion .item {
+  position: relative;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.accordion .item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion .item .title {
+  height: 40px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.accordion .item .title i {
+  margin-right: 10px;
+  transition: 400ms all;
+}
+
+.accordion .item .content {
+  border-radius: 0 0 3px 3px;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  line-height: 130%;
+  font-size: 14px;
+  transition: 400ms all;
+}
+
+.accordion .item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.accordion .item input:checked+.title {
+  background: #eee;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion .item input:checked+.title i {
+  transform: rotate(90deg);
+}
+
+.accordion .item input:checked+.title+.content {
+  max-height: 700px;
+  padding: 15px;
+}
