@@ -1,5 +1,5 @@
 <h1 align="center">
-   CSS - Accordion
+   CSS - Input Placeholder Animation
 </h1>
 
 <p align="center">
