@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  scroll-timeline: --scrollFalan;
+  overflow: auto;
+  height: 100vh;
+  line-height: 130%;
+}
+
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 0 0 60px;
+  background: linear-gradient(to bottom, white, transparent);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  animation-timeline: --scrollFalan;
+  animation-timing-function: linear;
+  animation-name: opacity;
+}
+
+.progress>div {
+  width: 0;
+  height: 6px;
+  background: red;
+  animation-timeline: --scrollFalan;
+  animation-timing-function: linear;
+  animation-name: scrollWith;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0
+  }
+
+  2% {
+    opacity: 1
+  }
+}
+
+@keyframes scrollWith {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
