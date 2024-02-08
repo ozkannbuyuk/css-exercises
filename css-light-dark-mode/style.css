@@ -1,0 +1,14 @@
+:root :has([name=theme][value=light]:checked) {
+	--bg-color: #ddd;
+	--text-color: #333;
+}
+
+:root :has([name=theme][value=dark]:checked) {
+	--bg-color: #333;
+	--text-color: #fff;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
