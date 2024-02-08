@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  padding-top: 50px;
+  background: #eee;
+}
+
+.steps {
+  width: 1000px;
+  background: #fff;
+  position: relative;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.steps ul {
+  display: flex;
+}
+
+.steps ul li {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.steps ul li::before {
+  content: "";
+  height: 2px;
+  width: calc(50% + 100px);
+  position: absolute;
+  top: 25px;
+  right: -100px;
+  z-index: -1;
+  background: #eee;
+}
+
+.steps ul li:last-child::before {
+  display: none;
+}
+
+.steps ul li .number {
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.steps ul li .text {
+  font-size: 14px;
+  color: #999;
+  padding-top: 10px;
+}
+
+.steps ul li.done::before {
+  background: #2bc72b;
+}
+
+.steps ul li.done .number {
+  background: #2bc72b;
+  color: #fff;
+}
+
+.steps ul li.done .text {
+  color: #2bc72b;
+}
+
+.steps ul li.pending::before {
+  background: #e26b2f;
+}
+
+.steps ul li.pending .number {
+  background: #e26b2f;
+  color: #fff;
+}
+
+.steps ul li.pending .text {
+  color: #e26b2f;
+}
+
+.steps ul li.active::before {
+  background: #2faee2;
+}
+
+.steps ul li.active .number {
+  background: #2faee2;
+  color: #fff;
+}
+
+.steps ul li.active .text {
+  color: #2faee2;
+}
