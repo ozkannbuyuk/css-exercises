@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border-top: 10px solid red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  animation: spin1 2s linear infinite;
+}
+
+.loader span {
+  color: red;
+  animation: spin2 2s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+.loader::after {
+  border-top: 10px solid green;
+  transform: rotate(120deg);
+}
+
+.loader::before {
+  border-top: 10px solid blue;
+  transform: rotate(240deg);
+}
+
+@keyframes spin1 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
