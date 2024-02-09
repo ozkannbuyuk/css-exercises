@@ -1,1 +1,7 @@
-![419shots_so](https://github.com/ozkannbuyuk/css-exercises/assets/111967202/f4b87d52-d701-4546-8583-b090086b59df)
+<h1 align="center">
+   CSS - Mac Dock Menu
+</h1>
+
+<p align="center">
+  <img src="https://github.com/ozkannbuyuk/css-exercises/assets/111967202/726a9415-9af7-49d6-8b97-30b54c85daad" width="800" />
+</p>
