@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #181818;
+}
+
+.header {
+  background: #202020;
+}
+
+.header .container {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header .container .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .container .logo .menu-icon {
+  height: 24px;
+  fill: #fff;
+  margin-right: 25px;
+}
+
+.header .container .logo .logo-img {
+  height: 24px;
+}
+
+.header .container .search {
+  flex: 1;
+  display: flex;
+  margin: 0 40px 0 80px;
+  max-width: 640px;
+}
+
+.header .container .search input {
+  height: 32px;
+  flex: 1;
+  color: #fff;
+  background-color: #121212;
+  border: 1px solid #303030;
+  font-size: 16px;
+  padding: 0 10px;
+  line-height: 30px;
+  border-radius: 2px 0 0 2px;
+}
+
+.header .container .search input:focus {
+  border-color: #005fcc;
+}
+
+.header .container .search button {
+  width: 65px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 2px 2px 0;
+  background-color: #303030;
+}
+
+.header .container .search button svg {
+  fill: rgba(255, 255, 255, 0.3);
+  height: 20px;
+}
+
+.header .container nav ul {
+  display: flex;
+}
+
+.header .container nav ul li {
+  margin-left: 30px;
+}
+
+.header .container nav ul li a {
+  display: block;
+}
+
+.header .container nav ul li a svg {
+  fill: #fff;
+  height: 24px;
+}
+
+main {
+  display: flex;
+  padding: 24px 30px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+main .left {
+  flex: 1;
+}
+
+main .left .video {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main .left .title {
+  padding: 20px 0 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main .left .title h5 {
+  font-size: 18px;
+  color: #fff;
+}
+
+main .left .title h5 a {
+  color: #3ea6ff;
+}
+
+main .left .title .alt-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .left .title .alt-title .date {
+  font-size: 14px;
+  color: #aaaaaa;
+  padding: 10px 0;
+}
+
+main .left .title .alt-title nav {
+  align-self: flex-end;
+}
+
+main .left .title .alt-title nav ul {
+  display: flex;
+}
+
+main .left .title .alt-title nav ul li {
+  margin-left: 25px;
+}
+
+main .left .title .alt-title nav ul li a {
+  color: #aaaaaa;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  font-weight: 500;
+}
+
+main .left .title .alt-title nav ul li svg {
+  height: 20px;
+  margin-right: 10px;
+  fill: #909090;
+}
+
+main .left .title .alt-title nav ul li .likes {
+  border-bottom: 2px solid #606060;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+main .left .title .alt-title nav ul li .likes a:first-child {
+  margin-right: 20px;
+}
+
+main .left .title .alt-title nav ul li .share {
+  display: flex;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+main .left .channel-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+main .left .channel-info .channel {
+  display: flex;
+  align-items: center;
+}
+
+main .left .channel-info .channel img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+main .left .channel-info .channel .name {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+}
+
+main .left .channel-info .channel .subscriber {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+main .left .channel-info ul {
+  display: flex;
+}
+
+main .left .channel-info ul li {
+  margin-left: 10px;
+}
+
+main .left .channel-info ul li a {
+  display: flex;
+  align-items: center;
+  height: 39px;
+  padding: 0 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+}
+
+main .left .channel-info ul li a.join {
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+}
+
+main .left .channel-info ul li a.subscribe {
+  background: #cc0000;
+  color: #fff;
+}
+
+main .right {
+  min-width: 400px;
+  margin-left: 24px;
+}
