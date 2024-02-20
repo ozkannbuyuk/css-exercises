@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS - Basic Blog Homepage</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="header-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Developer</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="clearfix"></div>
+
+            <div class="header-text">
+                <h1><span>I am</span> John DOE</h1>
+                <p>Developer</p>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="author">
+        <div class="container">
+
+            <div class="author-content">
+                <div class="author-image">
+                    <img src="images/author.png" alt="author">
+                </div>
+                <div class="author-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        <span>ozkanbuyuk@icloud.com</span>
+                    </p>
+                </div>
+                <div class="author-social-media">
+                    <ul>
+                        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-googleplus"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
+                    <div class="blog-list-content">
+                        <div class="blog-list-image">
+                            <img src="images/blog-01.jpg" alt="blog-image" class="img-fluid">
+                        </div>
+
+                        <div class="blog-list-info">
+                            <ul>
+                                <li>
+                                    <img src="images/avatar.jpg" alt="avatar">
+                                </li>
+                                <li><a href="#">ozkanbuyuk</a></li>
+                                <li>.</li>
+                                <li>20 Feb 2024</li>
+                            </ul>
+                        </div>
+
+                        <div class="blog-list-text">
+                            <h2>BLOG CONTENT TITLE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. </p>
+                        </div>
+
+                        <div class="blog-list-bottom">
+                            <a href="#" class="btn btn-primary">Read More</a>
+                            <ul>
+                                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-googleplus"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="pagination">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">...</a></li>
+                            <li><a href="#">69</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+                    <div class="search">
+                        <form action="#">
+                            <input type="text" name="search" placeholder="Search" class="search-input">
+                            <button type="submit" class="search-submit">
+                                <ion-icon name="search"></ion-icon>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="recent-post">
+                        <div class="sidebar-title">
+                            <h2>Recent Post</h2>
+                        </div>
+                        <div class="sidebar-content">
+                            <img src="images/sidebar.jpg" alt="sidebar image" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,</p>
+                        </div>
+                        <div class="sidebar-content">
+                            <img src="images/sidebar.jpg" alt="sidebar image" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,</p>
+                        </div>
+                        <div class="sidebar-content">
+                            <img src="images/sidebar.jpg" alt="sidebar image" class="img-fluid">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,</p>
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <div class="sidebar-title">
+                            <h2>Tags</h2>
+                        </div>
+                        <div class="sidebar-content">
+                            <ul class="tags-item">
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">UI & UX</a></li>
+                                <li><a href="#">React</a></li>
+                                <li><a href="#">Vue</a></li>
+                                <li><a href="#">Developer</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>All rights reserved @ozkanbuyuk 2024</p>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
